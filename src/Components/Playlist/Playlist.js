@@ -1,5 +1,5 @@
 import React from 'react';
-import trackList from '../trackList/TrackList';
+import TrackList from '../TrackList/TrackList';
 import './Playlist.css'
 
 class Playlist extends React.Component {
@@ -17,11 +17,12 @@ class Playlist extends React.Component {
       <div className="Playlist">
         <input defaultValue={'New Playlist'}
           onChange={this.handleNameChange} />
-        <trackList
+        <TrackList
           tracks={this.props.playlistTracks}
           onRemove={this.props.onRemove}
           isRemoval={true} />
-        <a className="Playlist-save">SAVE TO SPOTIFY
+        <a
+          className="Playlist-save">SAVE TO SPOTIFY
           onClick={this.props.onSave} </a>
       </div>
     )
