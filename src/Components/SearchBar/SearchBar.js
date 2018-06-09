@@ -7,6 +7,7 @@ class SearchBar extends React.Component {
     this.state = { term : ''};
     this.handleTermChange = this.handleTermChange.bind(this);
     this.handleSearch = this.handleSearch.bind(this);
+    this.handleKeyPress = this.handleKeyPress.bind(this);
   }
 
   handleTermChange(e) {
